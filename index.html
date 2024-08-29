@@ -296,7 +296,7 @@
           </tr>
     
           <tr class="qlive">
-            <td colspan="5" class="total-hours">Total Hours/Week: 22.5 Hours</td>
+            <td colspan="5" class="total-hours">Total Hours/Week: <span id="total-hours">0</span></td>
           </tr>
         </tbody>
       </table>
@@ -320,5 +320,29 @@
     </div>
     <script src="script.js"></script>
     <script src="hours.js"></script>
+
+    <script>
+      function calculateTotalHours() {
+        const timeCells = document.querySelectorAll('td[data-label="Time"]');
+        let totalHours = 0;
+  
+        timeCells.forEach(cell => {
+          const timeRange = cell.textContent.trim();
+          const [start, end] = timeRange.split('-').map(time => {
+            const [hour, minute] = time.replace(/(AM|PM)/g, '').split(':').map(Number);
+            const isPM = time.includes('PM');
+            return hour + (isPM && hour !== 12 ? 12 : 0) + minute / 60;
+          });
+  
+          const hours = end - start;
+          totalHours += hours;
+        });
+  
+        document.getElementById('total-hours').textContent = totalHours.toFixed(2);
+      }
+  
+      calculateTotalHours();
+    </script>
+
   </body>
 </html>
