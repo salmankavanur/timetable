@@ -112,6 +112,14 @@ td.sunday {
     color: #fff;
 }
 
+.totals {
+    margin-top: 20px;
+  }
+
+.total-hours {
+    font-weight: bold;
+  }  
+
 /* Button Styles */
 .notification-btn {
     background-color: #4CAF50;
