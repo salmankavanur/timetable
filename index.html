@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="meta_og_image.png" />
+    <meta
+      property="og:description"
+      content="Time Schedule with all mandatory details such as day, time, student name,
+       platform, notification button. The Add to Calendar button will be helpful to get the notification via Google Calander" />
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timetable">
+      <h2>Class Timetable</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Student Name</th>
+            <th>Platform</th>
+            <th>Notification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="qlive">
+            <td rowspan="3" data-label="Day" class="monday">Monday</td>
+            <td data-label="Time">5pm-6pm</td>
+            <td data-label="Student Name">Zainab</td>
+            <td data-label="Platform">QLive</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Monday"
+                data-time="17:00-18:00"
+                data-student="Zainab"
+                data-platform="QLive"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="has">
+            <td data-label="Time">7:30pm-8:30pm</td>
+            <td data-label="Student Name">Jaza</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Monday"
+                data-time="19:30-20:30"
+                data-student="Jaza"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="has">
+            <td data-label="Time">9pm-9:30pm</td>
+            <td data-label="Student Name">Jaza</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Monday"
+                data-time="21:00-21:30"
+                data-student="Jaza"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+
+          <tr class="interval">
+            <td rowspan="2" data-label="Day" class="tuesday">Tuesday</td>
+            <td data-label="Time">7:30pm-8:30pm</td>
+            <td data-label="Student Name">Zainab</td>
+            <td data-label="Platform">Interval</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Tuesday"
+                data-time="19:30-20:30"
+                data-student="Zb"
+                data-platform="Interval"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="has">
+            <td data-label="Time">9pm-9:30pm</td>
+            <td data-label="Student Name">Jaza</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Tuesday"
+                data-time="21:00-21:30"
+                data-student="Jaza"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+
+          <tr class="qlive">
+            <td rowspan="2" data-label="Day" class="wednesday">Wednesday</td>
+            <td data-label="Time">5pm-5:30pm</td>
+            <td data-label="Student Name">Zainab</td>
+            <td data-label="Platform">QLive</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Wednesday"
+                data-time="17:00-17:30"
+                data-student="Zainab"
+                data-platform="QLive"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="qlive">
+            <td data-label="Time">9:30pm-10:30pm</td>
+            <td data-label="Student Name">Fayiza</td>
+            <td data-label="Platform">QLive</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Wednesday"
+                data-time="21:30-22:30"
+                data-student="Fayiza"
+                data-platform="QLive"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+
+          <tr class="interval">
+            <td rowspan="2" data-label="Day" class="thursday">Thursday</td>
+            <td data-label="Time">7pm-7:30pm</td>
+            <td data-label="Student Name">Zainab</td>
+            <td data-label="Platform">Interval</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Thursday"
+                data-time="19:00-19:30"
+                data-student="Zb"
+                data-platform="Interval"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="qlive">
+            <td data-label="Time">9:30pm-10:30pm</td>
+            <td data-label="Student Name">Fayiza</td>
+            <td data-label="Platform">QLive</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Thursday"
+                data-time="21:30-22:30"
+                data-student="Fayiza"
+                data-platform="QLive"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+
+          <tr class="has">
+            <td rowspan="3" data-label="Day" class="friday">Friday</td>
+            <td data-label="Time">5pm-5:30pm</td>
+            <td data-label="Student Name">Zaibab</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Friday"
+                data-time="17:00-17:30"
+                data-student="Zaibab"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="has">
+            <td data-label="Time">7:30pm-8pm</td>
+            <td data-label="Student Name">Jaza</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Friday"
+                data-time="19:30-20:00"
+                data-student="Jaza"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="has">
+            <td data-label="Time">9pm-9:30pm</td>
+            <td data-label="Student Name">Jaza</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Friday"
+                data-time="21:00-21:30"
+                data-student="Jaza"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+
+          <tr class="has">
+            <td rowspan="2" data-label="Day" class="saturday">Saturday</td>
+            <td data-label="Time">3pm-4pm</td>
+            <td data-label="Student Name">Emin</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Saturday"
+                data-time="15:00-16:00"
+                data-student="Emin"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="interval">
+            <td data-label="Time">7:30pm-8:30pm</td>
+            <td data-label="Student Name">Zainab</td>
+            <td data-label="Platform">Interval</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Saturday"
+                data-time="19:30-20:30"
+                data-student="Znb"
+                data-platform="Interval"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+
+          <tr class="has">
+            <td rowspan="3" data-label="Day" class="sunday">Sunday</td>
+            <td data-label="Time">3pm-4pm</td>
+            <td data-label="Student Name">Emin</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Sunday"
+                data-time="15:00-16:00"
+                data-student="Emin"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+          <tr class="has">
+            <td data-label="Time">5pm-5:30pm</td>
+            <td data-label="Student Name">Zainab</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Sunday"
+                data-time="17:00-17:30"
+                data-student="Zainab"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+
+          <tr class="has">
+            <td data-label="Time">7:30pm-8pm</td>
+            <td data-label="Student Name">Jaza</td>
+            <td data-label="Platform">HAS Academy</td>
+            <td data-label="Notification">
+              <button
+                class="notification-btn"
+                data-day="Sunday"
+                data-time="19:30-20:00"
+                data-student="Jaza"
+                data-platform="HAS Academy"
+              >
+                Add to Calendar
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="legend">
+        <h3>Day Colors</h3>
+        <p><span class="color-box monday"></span> Monday</p>
+        <p><span class="color-box tuesday"></span> Tuesday</p>
+        <p><span class="color-box wednesday"></span> Wednesday</p>
+        <p><span class="color-box thursday"></span> Thursday</p>
+        <p><span class="color-box friday"></span> Friday</p>
+        <p><span class="color-box saturday"></span> Saturday</p>
+        <p><span class="color-box sunday"></span> Sunday</p>
+      </div>
+      <div class="legend">
+        <h3>Platform Colors</h3>
+        <p><span class="legend-color qlive"></span> QLive</p>
+        <p><span class="legend-color interval"></span> Interval</p>
+        <p><span class="legend-color has"></span> HAS Academy</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
